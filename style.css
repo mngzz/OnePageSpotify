@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.background {
+  background-image: url("./assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -100;
+}
+
+.container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #f5f5f5bf;
+  width: 366px;
+  height: 611px;
+  border-radius: 20px;
+}
+
+.album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h2 {
+  margin-bottom: 0;
+}
+
+.title p {
+  margin-top: 10px;
+}
+
+.timeRange {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.playButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(#92375a, #68265c);
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#pauseIcon {
+  position: relative;
+  left: 5px;
+  display: none;
+}
+
+.sideButton {
+  filter: drop-shadow(0px 0px 12px grey);
+}
+
+.button {
+  cursor: pointer;
+}
+
+#audioProgress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ffffff80;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#audioProgress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  margin: 0px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+  border: 5px solid #56255c;
+}
